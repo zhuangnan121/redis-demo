@@ -28,6 +28,9 @@ public class SpikeController {
     private StringRedisTemplate stringRedisTemplate;
 
     @Autowired
+    private RedisTemplate redisTemplate;
+
+    @Autowired
     private RedissonClient redissonClient;
 
     private AtomicInteger successNum = new AtomicInteger(0);
